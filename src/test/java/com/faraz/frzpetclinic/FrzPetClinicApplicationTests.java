@@ -8,6 +8,7 @@ class FrzPetClinicApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
