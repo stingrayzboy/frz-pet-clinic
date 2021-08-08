@@ -4,8 +4,6 @@ import com.faraz.frzpetclinic.models.Owner;
 import com.faraz.frzpetclinic.models.Vet;
 import com.faraz.frzpetclinic.services.OwnerService;
 import com.faraz.frzpetclinic.services.VetService;
-import com.faraz.frzpetclinic.services.map.OwnerServiceMap;
-import com.faraz.frzpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +12,7 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService){
+    public DataLoader(OwnerService ownerService, VetService vetService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
     }

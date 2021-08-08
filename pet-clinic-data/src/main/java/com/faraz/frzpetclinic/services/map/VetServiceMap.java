@@ -1,13 +1,13 @@
 package com.faraz.frzpetclinic.services.map;
 
 import com.faraz.frzpetclinic.models.Vet;
-import com.faraz.frzpetclinic.services.CrudService;
 import com.faraz.frzpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+
 @Service
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
