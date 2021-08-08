@@ -3,9 +3,10 @@ package com.faraz.frzpetclinic.services.map;
 import com.faraz.frzpetclinic.models.Pet;
 import com.faraz.frzpetclinic.services.CrudService;
 import com.faraz.frzpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Pet findById(Long id) {
