@@ -2,10 +2,11 @@ package com.faraz.frzpetclinic.services.map;
 
 import com.faraz.frzpetclinic.models.Owner;
 import com.faraz.frzpetclinic.services.CrudService;
+import com.faraz.frzpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerService extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
@@ -29,5 +30,10 @@ public class OwnerService extends AbstractMapService<Owner,Long> implements Crud
     @Override
     public void delete(Owner t) {
         super.delete(t);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }

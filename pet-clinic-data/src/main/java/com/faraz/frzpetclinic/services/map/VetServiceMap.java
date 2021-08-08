@@ -1,23 +1,24 @@
 package com.faraz.frzpetclinic.services.map;
 
-import com.faraz.frzpetclinic.models.Pet;
+import com.faraz.frzpetclinic.models.Vet;
 import com.faraz.frzpetclinic.services.CrudService;
+import com.faraz.frzpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class PetService extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
     @Override
-    public Pet findById(Long id) {
+    public Vet findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Pet save(Pet pet) {
-        return super.save(pet.getId(), pet);
+    public Vet save(Vet vet) {
+        return super.save(vet.getId(), vet);
     }
 
     @Override
-    public Set<Pet> findAll() {
+    public Set<Vet> findAll() {
         return super.findAll();
     }
 
@@ -27,7 +28,7 @@ public class PetService extends AbstractMapService<Pet,Long> implements CrudServ
     }
 
     @Override
-    public void delete(Pet t) {
+    public void delete(Vet t) {
         super.delete(t);
     }
 }
